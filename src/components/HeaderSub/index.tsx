@@ -11,9 +11,9 @@ interface HeaderSubProps{
 const HeaderSub: React.FC<HeaderSubProps> = (props) => {
     return(
         <Container>
-            <Link to="/" className={props.menSel == 1 ? "link-ipag-sel":"link-ipag"}>Home</Link>
-            <Link to="/suporte" className={props.menSel == 2 ? "link-ipag-sel":"link-ipag"}>Suporte</Link>
-            <Link to="/cadastro" className={props.menSel == 3 ? "link-ipag-sel":"link-ipag"}>Contato</Link>
+            <Link to="/" className={props.menSel ===1 ? "link-ipag-sel":"link-ipag"}>Home</Link>
+            <Link to="/suporte" className={props.menSel === 2 ? "link-ipag-sel":"link-ipag"}>Suporte</Link>
+            <Link to="/cadastro" className={props.menSel === 3 ? "link-ipag-sel":"link-ipag"}>Contato</Link>
         </Container>
     )
 }
